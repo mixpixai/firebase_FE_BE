@@ -1,0 +1,33 @@
+a {
+  color: wheat;
+}
+
+body {
+  background-color: #282c34;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.heart-throb {
+  animation: heartThrob 2s ease-in-out infinite;
+}
+
+@keyframes heartThrob {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1); /* You can adjust the scale value to control the intensity of the throb */
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); /* You can adjust the scale value to control the intensity of the throb */
+  }
+  60% {
+    transform: scale(1); /* You can adjust the scale value to control the intensity of the throb */
+    transform: rotate(0deg);
+  }
+
+}
